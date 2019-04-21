@@ -6,7 +6,7 @@ using System.Text;
 
 namespace CarRentalSOA.RentCar.DataAccess.Concrete.EntityFramework
 {
-    public class CarRentalSOAContex:DbContext 
+    public class CarRentalSOAContext:DbContext 
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
