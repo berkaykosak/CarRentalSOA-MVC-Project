@@ -1,4 +1,5 @@
-﻿using CarRentalSOA.RentCar.Entitites.Concrete;
+﻿using CarRentalSOA.Core.DataAccess;
+using CarRentalSOA.RentCar.Entitites.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;

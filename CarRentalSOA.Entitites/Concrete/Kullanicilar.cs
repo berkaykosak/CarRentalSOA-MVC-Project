@@ -13,7 +13,6 @@ namespace CarRentalSOA.RentCar.Entitites.Concrete
         public string soyadi { get; set; }
         public int yasi { get; set; }
         public int ehliyetYasi { get; set; }
-        public int MyProperty { get; set; }
         public int sifre { get; set; }
         public int RolID { get; set; }
 
