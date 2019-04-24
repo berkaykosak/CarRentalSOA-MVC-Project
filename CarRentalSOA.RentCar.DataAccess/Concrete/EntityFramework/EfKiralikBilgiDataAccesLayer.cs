@@ -9,7 +9,15 @@ namespace CarRentalSOA.RentCar.DataAccess.Concrete.EntityFramework
 {
     public class EfKiralikBilgiDataAccesLayer : EfEntityRepositoryBase<KiralikBilgi, CarRentalSOAContext>, IKiralikBilgiDataAccesLayer
     {
+        public void Delete(int kiralıkBilgiID)
+        {
+            throw new NotImplementedException();
+        }
 
+        public List<KiralikBilgi> GetList()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
-}
+

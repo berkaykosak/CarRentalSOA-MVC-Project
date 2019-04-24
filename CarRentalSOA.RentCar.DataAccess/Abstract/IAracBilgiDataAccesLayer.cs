@@ -1,4 +1,5 @@
-﻿using CarRentalSOA.RentCar.Entitites.Concrete;
+﻿using CarRentalSOA.Core.DataAccess;
+using CarRentalSOA.RentCar.Entitites.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -6,10 +7,10 @@ using System.Text;
 
 namespace CarRentalSOA.RentCar.DataAccess.Abstract
 {
-   public interface IAracBilgiDataAccesLayer :IEntityRepositoyr<AracBilgi>
+    public interface IAracBilgiDataAccesLayer : IEntityRepository<AracBilgi>
     {
-        //SADECE SINIFA ÖZEL OPERASYONLAR YAZILABİLİR.
+        
     }
 
-   
+
 }

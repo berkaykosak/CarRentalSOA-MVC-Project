@@ -1,6 +1,6 @@
 ﻿namespace CarRentalSOA.RentCar.DataAccess.Abstract
 {
-    public interface IEntityRepositoyr<T>
+    public interface IEntityRepository<T>
     {
     }
 }

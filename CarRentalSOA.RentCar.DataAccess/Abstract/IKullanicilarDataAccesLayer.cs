@@ -5,8 +5,12 @@ using System.Text;
 
 namespace CarRentalSOA.RentCar.DataAccess.Abstract
 {
-    public interface IKullanicilarDataAccesLayer : IEntityRepositoyr<Kullanicilar>
+    public interface IKullanicilarDataAccesLayer : IEntityRepository<Kullanicilar>
     {
         //SADECE SINIFA ÖZEL OPERASYONLAR YAZILABİLİR.
+        void Add(Kullanicilar kullanicilar);
+        void Delete(int kullanicilarID);
+        List<Kullanicilar> GetList();
+        void Update(Kullanicilar kullanicilar);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using CarRentalSOA.RentCar.Business.Abstract;
+using CarRentalSOA.RentCar.DataAccess.Abstract;
 using CarRentalSOA.RentCar.Entitites.Concrete;
 using System;
 using System.Collections.Generic;
@@ -6,26 +7,33 @@ using System.Text;
 
 namespace CarRentalSOA.RentCar.Business.Concrete
 {
-    class KullanicilarManager : IKullanicilarService
+    public class KullanicilarManager : IKullanicilarService
     {
+        private IKullanicilarDataAccesLayer _kullanicilarDataAccesLayer;
+
+        public KullanicilarManager(IKullanicilarDataAccesLayer kullanicilarDataAccesLayer)
+        {
+            _kullanicilarDataAccesLayer = kullanicilarDataAccesLayer;
+        }
+
         public void Add(Kullanicilar kullanicilar)
         {
-            throw new NotImplementedException();
+            _kullanicilarDataAccesLayer.Add(kullanicilar);
         }
 
         public void Delete(int kullanicilarID)
         {
-            throw new NotImplementedException();
+            _kullanicilarDataAccesLayer.Delete(kullanicilarID);
         }
 
         public List<Kullanicilar> GetAll()
         {
-            throw new NotImplementedException();
+            return _kullanicilarDataAccesLayer.GetList();
         }
 
         public void Update(Kullanicilar kullanicilar)
         {
-            throw new NotImplementedException();
+            _kullanicilarDataAccesLayer.Update(kullanicilar);
         }
     }
 }

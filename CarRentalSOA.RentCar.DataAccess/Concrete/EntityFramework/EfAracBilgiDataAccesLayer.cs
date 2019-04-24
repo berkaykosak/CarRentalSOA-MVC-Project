@@ -7,8 +7,8 @@ using System.Text;
 
 namespace CarRentalSOA.RentCar.DataAccess.Concrete.EntityFramework
 {
-    public class EfAracBilgiDataAccesLayer:EfEntityRepositoryBase<AracBilgi,CarRentalSOAContext>,IAracBilgiDataAccesLayer
+    public class EfAracBilgiDataAccesLayer : EfEntityRepositoryBase<AracBilgi, CarRentalSOAContext>, IAracBilgiDataAccesLayer
     {
-
+   
     }
 }

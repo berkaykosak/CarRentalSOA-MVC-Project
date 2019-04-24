@@ -1,4 +1,5 @@
 ﻿using CarRentalSOA.RentCar.Business.Abstract;
+using CarRentalSOA.RentCar.DataAccess.Abstract;
 using CarRentalSOA.RentCar.Entitites.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,25 +9,37 @@ namespace CarRentalSOA.RentCar.Business.Concrete
 {
     public class AracBilgiManager : AracBilgiService
     {
-        private AracBilgiService aracBilgiService;
+        private IAracBilgiDataAccesLayer _aracBilgiDataAccesLayer;
+
+        public AracBilgiManager(IAracBilgiDataAccesLayer aracBilgiDataAccesLayer)
+        {
+            _aracBilgiDataAccesLayer = aracBilgiDataAccesLayer;
+        }
+
+        public List<AracBilgi> GetAll()
+        {
+            return _aracBilgiDataAccesLayer.GetList();
+            //bu kısımlarda istediğimiz sorguları gönderebiliriz
+            // GetbyID numarası diyip ID numarasına göre sorgulama yapabiliriz....
+
+        }
+
         public void Add(AracBilgi aracBilgi)
         {
+            _aracBilgiDataAccesLayer.Add(aracBilgi);
             
         }
 
         public void Delete(int aracBilgiID)
         {
-            throw new NotImplementedException();
+            _aracBilgiDataAccesLayer.Delete(new AracBilgi {aracID = aracBilgiID } );
         }
 
-        public List<AracBilgi> GetAll()
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public void Update(AracBilgi aracBilgi)
         {
-            throw new NotImplementedException();
+            _aracBilgiDataAccesLayer.Update(aracBilgi);
         }
     }
 }

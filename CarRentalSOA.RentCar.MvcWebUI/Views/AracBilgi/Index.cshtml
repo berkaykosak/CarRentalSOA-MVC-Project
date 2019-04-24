@@ -1,0 +1,54 @@
+﻿@model CarRentalSOA.RentCar.MvcWebUI.Models.AracBilgiListViewModel
+
+@{ 
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>Arac ID </td>
+                <td>Arac Markası </td>
+                <td>Arac Modeli </td>
+                <td>Gereken Ehliyet Yaşı </td>
+                <td>Minimum Yaş </td>
+                <td>Günlük KM Sınırı</td>
+                <td>Anlık KM</td>
+                <td>Airbag Var mı?</td>
+                <td>Bagaj Hacmi </td>
+                <td>Koltuk Sayısı</td>
+                <td>Günlük Kira Bedeli</td>
+
+            </tr>
+            @foreach (var aracbilgi in Model.aracbilgis)
+    {
+            <tr>
+                <td>@aracbilgi.aracID </td>
+                <td>@aracbilgi.aracMarkasi </td>
+                <td>@aracbilgi.aracModeli </td>
+                <td>@aracbilgi.gerekenEhliyetYasi </td>
+                <td>@aracbilgi.minimumYas </td>
+                <td>@aracbilgi.gunlukKmSinir</td>
+                <td>@aracbilgi.anlikKm</td>
+                <td>@aracbilgi.airbag </td>
+                <td>@aracbilgi.bagajHacmi</td>
+                <td>@aracbilgi.koltukSayisi</td>
+                <td>@aracbilgi.gunlukFiyat</td>
+
+            </tr>
+
+
+}
+        </table>
+    </div>
+
+</body>
+</html>
