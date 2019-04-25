@@ -1,12 +1,15 @@
 ﻿using CarRentalSOA.Core.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace CarRentalSOA.RentCar.Entitites.Concrete
 {
     public class AracBilgi:IEntity
     {
+        
+        [Key]
         public int aracID { get; set; }
         public string aracMarkasi { get; set; }
         public string aracModeli { get; set; }

@@ -9,7 +9,7 @@ namespace CarRentalSOA.RentCar.Business.Abstract
     {
         //istenilen operasyonları servis interface içine yani buraya yazıyoruz...
 
-        List<AracBilgi> GetAll();
+         List<AracBilgi> GetAll();
         void Add(AracBilgi aracBilgi);
         void Update(AracBilgi aracBilgi);
         void Delete(int aracBilgiID);

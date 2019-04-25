@@ -10,13 +10,13 @@ namespace CarRentalSOA.RentCar.DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=LAPTOP-04QCQ6HF;Databases=KiralikAraç; Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Server=LAPTOP-04QCQ6HF;Database=KiralikArac; Trusted_Connection=true");
         }
-        public DbSet<AracBilgi>  AracBilgis { get; set; }
-        public DbSet<KiralikBilgi> KiralikBilgis { get; set; }
-        public DbSet<Kullanicilar> Kullanicilars { get; set; }
-        public DbSet<Roller> Rollers { get; set; }
-        public DbSet<Sirket> Sirkets { get; set; }
+        public DbSet<AracBilgi>  AracBilgi { get; set; }
+        public DbSet<KiralikBilgi> KiralikBilgi { get; set; }
+        public DbSet<Kullanicilar> Kullanicilar { get; set; }
+        public DbSet<Roller> Roller { get; set; }
+        public DbSet<Sirket> Sirket { get; set; }
 
     }
 }

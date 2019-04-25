@@ -25,7 +25,7 @@ namespace CarRentalSOA.RentCar.MvcWebUI.Controllers
 
             AracBilgiListViewModel model = new AracBilgiListViewModel
             {
-                aracbilgis = aracbilgis
+                aracbilgisi = aracbilgis
             };
             return View(model);
             // araçları listelerken başka şeyler de göndermek gerekebilir
