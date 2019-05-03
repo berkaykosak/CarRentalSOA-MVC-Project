@@ -11,12 +11,20 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.4.*" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CarRentalSOA.Core\CarRentalSOA.Core.csproj" />
     <ProjectReference Include="..\CarRentalSOA.Entitites\CarRentalSOA.RentCar.Entitites.csproj" />
     <ProjectReference Include="..\CarRentalSOA.RentCar.Business\CarRentalSOA.RentCar.Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>
